@@ -32,8 +32,16 @@
 	</modules>
 	<properties>
 		<spring-cloud.version>2023.0.3</spring-cloud.version>
+		<nimus-jose-jwt.version>7.0</nimus-jose-jwt.version>
 	</properties>
 	<dependencies>
+
+		<dependency>
+			<groupId>com.nimbusds</groupId>
+			<artifactId>nimbus-jose-jwt</artifactId>
+			<version>${nimus-jose-jwt.version}</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
