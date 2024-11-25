@@ -2,9 +2,13 @@ package com.jmtsu.ms.core.repository;
 
 
 import com.jmtsu.ms.core.model.UserModel;
-import org.springframework.data.repository.PagingAndSortingRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface UserModelRepository extends PagingAndSortingRepository<UserModel, Long> {
+import java.util.Optional;
 
-   UserModel findByUsername(String Username);
+
+public interface UserModelRepository extends JpaRepository<UserModel, Long> {
+
+
+   Optional<UserModel> findByUsername(String Username);
 }

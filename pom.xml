@@ -36,11 +36,7 @@
 	</properties>
 	<dependencies>
 
-		<dependency>
-			<groupId>com.nimbusds</groupId>
-			<artifactId>nimbus-jose-jwt</artifactId>
-			<version>${nimus-jose-jwt.version}</version>
-		</dependency>
+
 
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>

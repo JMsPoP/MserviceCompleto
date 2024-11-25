@@ -10,8 +10,8 @@
         <module name="core" />
         <module name="course" />
         <module name="auth" />
-        <module name="gateway" />
         <module name="discovery" />
+        <module name="gateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

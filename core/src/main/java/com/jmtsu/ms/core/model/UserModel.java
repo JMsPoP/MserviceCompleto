@@ -13,6 +13,7 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
+@Data
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 public class UserModel implements AbstractEntity {
     @Id
@@ -24,16 +25,5 @@ public class UserModel implements AbstractEntity {
     private String username;
     @NotNull(message = "The field 'password' is mandatory")
     @Column(nullable = false)
-    @ToString.Exclude
     private String password;
-    @NotNull(message = "The field 'roles' is mandatory")
-    @Column(nullable = false)
-    private String role = "USER";
-
-    public UserModel(@NotNull UserModel userModel){
-        this.id = userModel.getId();
-        this.username = userModel.getUsername();
-        this.password = userModel.getPassword();
-        this.role = userModel.getRole();
-    }
 }

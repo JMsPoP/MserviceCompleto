@@ -29,3 +29,14 @@ public class CourseController {
 		return new ResponseEntity<>(courseService.list(pageable), HttpStatus.OK);
 	}
 }
+
+@RestController
+@RequestMapping("/course")
+class HttpController {
+	@GetMapping("/public")
+	String privateRoute( ) {
+		return String.format("""
+				<h1>Private route, only authorized personal! 🔐  </h1>
+				""");
+	}
+}
