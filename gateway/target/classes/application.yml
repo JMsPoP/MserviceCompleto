@@ -18,7 +18,6 @@ spring:
 
 
       routes:
-<<<<<<< HEAD
         - id: product
           uri: lb://PRODUCT
           predicates:
@@ -32,26 +31,13 @@ spring:
             - Path=/payment/**
           filters:
             - AuthenticationFilter
-=======
-        - id: course
-          uri: lb://COURSE
-          predicates:
-            - Path=/course/**
-          filters:
-            - AuthenticationFilter
-
->>>>>>> 341f85a972fbfa08f7b4d111b48cf548c69fc9cf
 
         - id: auth
           uri: lb://AUTH
           predicates:
-<<<<<<< HEAD
             - Path=/auth/**
 
         - id: resilience
           uri: lb://RESILIENCE
           predicates:
             - Path=/resilience/**
-=======
-            - Path=/auth/**
->>>>>>> 341f85a972fbfa08f7b4d111b48cf548c69fc9cf

@@ -31,6 +31,7 @@ public class JwtService {
     }
 
 
+<<<<<<< HEAD
     public String generateToken(String email) {
         Map<String, Object> claims = new HashMap<>();
         return createToken(claims, email);
@@ -40,6 +41,17 @@ public class JwtService {
         return Jwts.builder()
                 .setClaims(claims)
                 .setSubject(email)
+=======
+    public String generateToken(String userName) {
+        Map<String, Object> claims = new HashMap<>();
+        return createToken(claims, userName);
+    }
+
+    private String createToken(Map<String, Object> claims, String userName) {
+        return Jwts.builder()
+                .setClaims(claims)
+                .setSubject(userName)
+>>>>>>> 341f85a972fbfa08f7b4d111b48cf548c69fc9cf
                 .setIssuedAt(new Date(System.currentTimeMillis()))
                 .setExpiration(new Date(System.currentTimeMillis() + 1000 * 60 * 30))
                 .signWith(getSignKey(), SignatureAlgorithm.HS256).compact();

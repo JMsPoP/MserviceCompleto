@@ -14,8 +14,14 @@ public class CustomUserDetailsService implements UserDetailsService {
     @Autowired
     private UserModelRepository userModelRepository;
     @Override
+<<<<<<< HEAD
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
         Optional< UserModel > userModel = userModelRepository.findByEmail(email);
         return userModel.map(CustomUserDetails::new).orElseThrow(()-> new UsernameNotFoundException("user not found with name:" + email));
+=======
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        Optional< UserModel > userModel = userModelRepository.findByUsername(username);
+        return userModel.map(CustomUserDetails::new).orElseThrow(()-> new UsernameNotFoundException("user not found with name:" + username));
+>>>>>>> 341f85a972fbfa08f7b4d111b48cf548c69fc9cf
     }
 }

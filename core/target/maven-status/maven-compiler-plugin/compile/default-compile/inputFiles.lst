@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\Notebook\OneDrive\Área de Trabalho\MserviceCompleto - 2.0\core\src\main\java\com\jmtsu\ms\core\enums\StatusEmail.java
 C:\Users\Notebook\OneDrive\Área de Trabalho\MserviceCompleto - 2.0\core\src\main\java\com\jmtsu\ms\core\model\AbstractEntity.java
 C:\Users\Notebook\OneDrive\Área de Trabalho\MserviceCompleto - 2.0\core\src\main\java\com\jmtsu\ms\core\model\EmailModel.java
@@ -6,3 +7,10 @@ C:\Users\Notebook\OneDrive\Área de Trabalho\MserviceCompleto - 2.0\core\src\mai
 C:\Users\Notebook\OneDrive\Área de Trabalho\MserviceCompleto - 2.0\core\src\main\java\com\jmtsu\ms\core\repository\EmailRepository.java
 C:\Users\Notebook\OneDrive\Área de Trabalho\MserviceCompleto - 2.0\core\src\main\java\com\jmtsu\ms\core\repository\ProductRepository.java
 C:\Users\Notebook\OneDrive\Área de Trabalho\MserviceCompleto - 2.0\core\src\main\java\com\jmtsu\ms\core\repository\UserModelRepository.java
+=======
+C:\Users\Notebook\OneDrive\Área de Trabalho\MicroServiceCompleto - BACKUP\core\src\main\java\com\jmtsu\ms\core\model\AbstractEntity.java
+C:\Users\Notebook\OneDrive\Área de Trabalho\MicroServiceCompleto - BACKUP\core\src\main\java\com\jmtsu\ms\core\model\Course.java
+C:\Users\Notebook\OneDrive\Área de Trabalho\MicroServiceCompleto - BACKUP\core\src\main\java\com\jmtsu\ms\core\model\UserModel.java
+C:\Users\Notebook\OneDrive\Área de Trabalho\MicroServiceCompleto - BACKUP\core\src\main\java\com\jmtsu\ms\core\repository\CourseRepository.java
+C:\Users\Notebook\OneDrive\Área de Trabalho\MicroServiceCompleto - BACKUP\core\src\main\java\com\jmtsu\ms\core\repository\UserModelRepository.java
+>>>>>>> 341f85a972fbfa08f7b4d111b48cf548c69fc9cf

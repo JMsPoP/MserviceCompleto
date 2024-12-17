@@ -8,6 +8,7 @@ import java.util.Collection;
 
 public class CustomUserDetails implements UserDetails {
 
+<<<<<<< HEAD
     private String email;
     private String password;
     private Boolean enable;
@@ -16,6 +17,14 @@ public class CustomUserDetails implements UserDetails {
         this.email = userModel.getEmail();
         this.password = userModel.getPassword();
         this.enable = userModel.getEnable();
+=======
+    private String username;
+    private String password;
+
+    public CustomUserDetails(UserModel userModel) {
+        this.username = userModel.getUsername();
+        this.password = userModel.getPassword();
+>>>>>>> 341f85a972fbfa08f7b4d111b48cf548c69fc9cf
     }
 
     @Override
@@ -30,7 +39,11 @@ public class CustomUserDetails implements UserDetails {
 
     @Override
     public String getUsername() {
+<<<<<<< HEAD
         return email;
+=======
+        return username;
+>>>>>>> 341f85a972fbfa08f7b4d111b48cf548c69fc9cf
     }
 
     @Override
@@ -50,6 +63,10 @@ public class CustomUserDetails implements UserDetails {
 
     @Override
     public boolean isEnabled() {
+<<<<<<< HEAD
         return this.enable;
+=======
+        return true;
+>>>>>>> 341f85a972fbfa08f7b4d111b48cf548c69fc9cf
     }
 }

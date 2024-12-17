@@ -1,0 +1,53 @@
+server:
+  port: 8083
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8081/eureka/
+    register-with-eureka: true
+
+spring:
+  application:
+    name: auth
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  jmx:
+    enabled: false
+  datasource:
+    url: jdbc:mysql://localhost:3306/ms_course?allowPublicKeyRetrieval=true&sslMode=DISABLED
+    username: root
+    password: Dinossauro13
+
+  rabbitmq:
+    addresses: amqps://pcrtavvk:x31gjiE_aFHYOdaazmeyqbNwlTnLaVCx@jackal.rmq.cloudamqp.com/pcrtavvk
+
+broker:
+  queue:
+    email:
+      name: default.email
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: testadorbacana@gmail.com
+    password: d u f t q p b j e c q p n h c g
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+resilience4j:
+  bulkhead:
+    instances:
+      UserSignUp:
+        maxConcurrentCalls: 50
+        maxWaitDuration: 3600s

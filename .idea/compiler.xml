@@ -10,6 +10,7 @@
         <module name="core" />
         <module name="auth" />
         <module name="discovery" />
+<<<<<<< HEAD
         <module name="resilience" />
         <module name="gateway" />
         <module name="email" />
@@ -22,6 +23,9 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
         </processorPath>
         <module name="payment" />
+=======
+        <module name="gateway" />
+>>>>>>> 341f85a972fbfa08f7b4d111b48cf548c69fc9cf
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

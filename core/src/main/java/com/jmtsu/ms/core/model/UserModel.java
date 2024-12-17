@@ -39,6 +39,7 @@ public class UserModel implements AbstractEntity {
     @NotNull(message = "The field 'password' is mandatory")
     @Column(nullable = false)
     private String password;
+<<<<<<< HEAD
 
     private UUID verificationCode;
 
@@ -46,4 +47,6 @@ public class UserModel implements AbstractEntity {
 
 
 
+=======
+>>>>>>> 341f85a972fbfa08f7b4d111b48cf548c69fc9cf
 }
