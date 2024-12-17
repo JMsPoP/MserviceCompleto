@@ -2,9 +2,17 @@ package com.jmtsu.ms.core.repository;
 
 
 import com.jmtsu.ms.core.model.UserModel;
-import org.springframework.data.repository.PagingAndSortingRepository;
+import org.apache.catalina.User;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface UserModelRepository extends PagingAndSortingRepository<UserModel, Long> {
+import java.util.Optional;
+import java.util.UUID;
 
-   UserModel findByUsername(String Username);
+
+public interface UserModelRepository extends JpaRepository<UserModel, Long> {
+
+
+   Optional<UserModel> findByEmail(String Email);
+
+   UserModel findByVerificationCode(UUID VerificationCode);
 }

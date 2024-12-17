@@ -1,0 +1,24 @@
+server:
+  port: 8085
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8081/eureka/
+    register-with-eureka: true
+
+spring:
+  application:
+    name: resilience
+
+
+resilience4j.circuitbreaker:
+  instances:
+    ProductCACHE:
+      minimumNumberOfCalls: 2
+      slidingWindowSize: 4
+    ProductCacheFindById:
+      minimumNumberOfCalls: 2
+      slidingWindowSize: 4

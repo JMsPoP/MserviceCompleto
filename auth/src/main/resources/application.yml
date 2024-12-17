@@ -7,7 +7,6 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8081/eureka/
-    fetch-registry: true
     register-with-eureka: true
 
 spring:
@@ -26,3 +25,29 @@ spring:
     url: jdbc:mysql://localhost:3306/ms_course?allowPublicKeyRetrieval=true&sslMode=DISABLED
     username: root
     password: Dinossauro13
+
+  rabbitmq:
+    addresses: amqps://pcrtavvk:x31gjiE_aFHYOdaazmeyqbNwlTnLaVCx@jackal.rmq.cloudamqp.com/pcrtavvk
+
+broker:
+  queue:
+    email:
+      name: default.email
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: testadorbacana@gmail.com
+    password: d u f t q p b j e c q p n h c g
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+resilience4j:
+  bulkhead:
+    instances:
+      UserSignUp:
+        maxConcurrentCalls: 50
+        maxWaitDuration: 3600s

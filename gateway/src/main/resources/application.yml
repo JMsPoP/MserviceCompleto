@@ -15,7 +15,29 @@ spring:
     name: gateway
   cloud:
     gateway:
-      discovery:
-        locator:
-          enabled: true
-          lower-case-service-id: true
+
+
+      routes:
+        - id: product
+          uri: lb://PRODUCT
+          predicates:
+            - Path=/product/**
+          filters:
+            - AuthenticationFilter
+
+        - id: payment
+          uri: lb://PAYMENT
+          predicates:
+            - Path=/payment/**
+          filters:
+            - AuthenticationFilter
+
+        - id: auth
+          uri: lb://AUTH
+          predicates:
+            - Path=/auth/**
+
+        - id: resilience
+          uri: lb://RESILIENCE
+          predicates:
+            - Path=/resilience/**

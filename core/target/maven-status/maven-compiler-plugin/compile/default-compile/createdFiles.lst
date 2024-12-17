@@ -1,4 +1,10 @@
 com\jmtsu\ms\core\model\AbstractEntity.class
-com\jmtsu\ms\core\model\Course$CourseBuilder.class
-com\jmtsu\ms\core\model\Course.class
-com\jmtsu\ms\core\repository\CourseRepository.class
+com\jmtsu\ms\core\repository\UserModelRepository.class
+com\jmtsu\ms\core\model\ProductModel.class
+com\jmtsu\ms\core\model\ProductModel$ProductModelBuilder.class
+com\jmtsu\ms\core\model\UserModel.class
+com\jmtsu\ms\core\enums\StatusEmail.class
+com\jmtsu\ms\core\model\EmailModel.class
+com\jmtsu\ms\core\model\UserModel$UserModelBuilder.class
+com\jmtsu\ms\core\repository\EmailRepository.class
+com\jmtsu\ms\core\repository\ProductRepository.class

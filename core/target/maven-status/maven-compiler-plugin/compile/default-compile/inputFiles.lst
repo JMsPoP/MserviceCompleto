@@ -1,3 +1,8 @@
-C:\Users\Notebook\Desktop\MicroServiceCompleto\core\src\main\java\com\jmtsu\ms\core\model\AbstractEntity.java
-C:\Users\Notebook\Desktop\MicroServiceCompleto\core\src\main\java\com\jmtsu\ms\core\model\Course.java
-C:\Users\Notebook\Desktop\MicroServiceCompleto\core\src\main\java\com\jmtsu\ms\core\repository\CourseRepository.java
+C:\Users\Notebook\OneDrive\Área de Trabalho\MserviceCompleto - 2.0\core\src\main\java\com\jmtsu\ms\core\enums\StatusEmail.java
+C:\Users\Notebook\OneDrive\Área de Trabalho\MserviceCompleto - 2.0\core\src\main\java\com\jmtsu\ms\core\model\AbstractEntity.java
+C:\Users\Notebook\OneDrive\Área de Trabalho\MserviceCompleto - 2.0\core\src\main\java\com\jmtsu\ms\core\model\EmailModel.java
+C:\Users\Notebook\OneDrive\Área de Trabalho\MserviceCompleto - 2.0\core\src\main\java\com\jmtsu\ms\core\model\ProductModel.java
+C:\Users\Notebook\OneDrive\Área de Trabalho\MserviceCompleto - 2.0\core\src\main\java\com\jmtsu\ms\core\model\UserModel.java
+C:\Users\Notebook\OneDrive\Área de Trabalho\MserviceCompleto - 2.0\core\src\main\java\com\jmtsu\ms\core\repository\EmailRepository.java
+C:\Users\Notebook\OneDrive\Área de Trabalho\MserviceCompleto - 2.0\core\src\main\java\com\jmtsu\ms\core\repository\ProductRepository.java
+C:\Users\Notebook\OneDrive\Área de Trabalho\MserviceCompleto - 2.0\core\src\main\java\com\jmtsu\ms\core\repository\UserModelRepository.java
